@@ -26,3 +26,9 @@ class Person(self):
     #YearPasses
     def yearPasses(self):
         age = age + 1
+
+
+    def main(self):
+        t = int(input())
+        for t in range(0, t):
+            age = int(input())
