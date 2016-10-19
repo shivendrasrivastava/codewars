@@ -1,13 +1,18 @@
 __author__ = "Shiven"
 
 def calculate():
-    for x in range(101):
-        if x % 3 == 0 and x % 5 == 0:
-            print(x,"FizzBuzz")
-        if x % 3 == 0 and x % 5 != 0:
-            print(x,"Fizz")
-        if x % 5 == 0 and x % 3 != 0:
-            print(x,"Buzz")
+    number = int(input().strip())
+    fizz = int(input().strip())
+    buzz = int(input().strip())
+    output = ""
+    for x in range(1,number+1):
+        if x % fizz == 0:
+            output += "Fizz"
+        if x % buzz == 0:
+            output += "Buzz"
+        if output:
+            print(output)
+        output = ""
 
 if __name__ == "__main__":
     calculate()
